@@ -1,0 +1,25 @@
+<%@ page pageEncoding="UTF-8" %>
+<div id="LoginInfoContainer" class="block-center boxed container">
+    <div id="RegistrationError" class="block-center error subcontainer" style="display: none;">
+    </div>
+    <div class="block-center section">
+        <label for="username">Username:</label>
+        <input id="username" type="text" />
+    </div>
+    <div class="block-center section">
+        <label>Password:</label>
+        <input id="password" type="password" />
+    </div>
+    <div class="block-center section">
+        <label>Confirm Password:</label>
+        <input id="confirmPassword" type="password" />
+    </div>
+    <div class="block-center section">
+        <label>Birth date:</label>
+        <input id="birthdate" type="date" />
+    </div>
+    <br />
+    <div class="block-center section">
+        <input id="register" type="submit" value="Register!" class="fill" />
+    </div>
+</div>

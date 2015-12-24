@@ -1,0 +1,10 @@
+<%@ page pageEncoding="UTF-8" %>
+<script type="text/template" id="LoginPageMainTemplate">
+    <%@include file="LoginPageMainTemplate.jspf" %>
+</script>
+<script type="text/template" id="RegistrationPageMainTemplate">
+    <%@include file="RegistrationPageMainTemplate.jspf" %>
+</script>
+<script type="text/template" id="ErrorManagerTemplate">
+    <%@include file="ErrorManagerTemplate.jspf" %>
+</script>

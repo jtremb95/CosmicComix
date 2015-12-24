@@ -1,0 +1,24 @@
+<%@ page pageEncoding="UTF-8" %>
+<div id="LoginInfoContainer" class="block-center boxed container">
+    <h2 class="inline-center">Enter your username and password to log in</h2>
+    <div id="LoginError" class="block-center error subcontainer" style="display: none;">
+    </div>
+    <div class="block-center section">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text" />
+    </div>
+    <div class="block-center section">
+        <label>Password:</label>
+        <input id="password" name="password" type="password" />
+    </div>
+    <br />
+    <div class="block-center section">
+        <input id="login" type="submit" value="Login" class="fill" />
+    </div>
+</div>
+<br />
+<div>
+    <p class="inline-center">
+        Don't have an account?  <a href="#register">Register</a> now!!
+    </p>
+</div>

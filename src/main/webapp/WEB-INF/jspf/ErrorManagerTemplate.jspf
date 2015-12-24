@@ -1,0 +1,7 @@
+<%@ page pageEncoding="UTF-8" %>
+<p>Please review and correct the following errors</p>
+<ul>
+    <\% for (var index = 0; index < errors.length; index++) { %>
+    <li><\%=errors[index]%></li>
+    <\%}%>
+</ul>
