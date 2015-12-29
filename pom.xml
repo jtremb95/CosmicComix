@@ -30,20 +30,6 @@
         <version>1.2.4.RELEASE</version>
     </parent>
 
-    <profiles>
-        <profile>
-            <id>PMD</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-pmd-plugin</artifactId>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-
     <dependencies>
         <!-- Spring -->
         <dependency>
@@ -113,13 +99,16 @@
             <version>${hsqldb.version}</version><!--Version comes from Spring Boot-->
             <scope>provided</scope>
         </dependency>
-
-
     </dependencies>
 
     <build>
         <finalName>CosmicComix</finalName>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.6</version>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -148,8 +137,9 @@
     <reporting>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jdepend-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.6</version>
             </plugin>
         </plugins>
     </reporting>
