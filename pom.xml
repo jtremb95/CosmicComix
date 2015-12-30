@@ -17,8 +17,6 @@
         <dbunit.version>2.5.0</dbunit.version>
         <spring.dbunit.version>1.2.0</spring.dbunit.version>
         <hsqldb.version>2.3.2</hsqldb.version>
-        <!--<sonar.host.url>https://sampleapp.dev.secureci.com/sonar/</sonar.host.url>
-        <sonar.jdbc.url>jdbc:mysql://sampleapp.dev.secureci.com/sonar/</sonar.jdbc.url>-->
         <sonar.jdbc.username>sonar</sonar.jdbc.username>
         <sonar.jdbc.password>sonar</sonar.jdbc.password>
         <tomcat.version>7.0.52</tomcat.version>
@@ -139,7 +137,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.6</version>
+                <configuration>
+                    <targetJdk>1.7.0_91</targetJdk>
+                    <rulesets>
+                        <ruleset>pmd-ruleset.xml</ruleset>
+                    </rulesets>
+                </configuration>
             </plugin>
         </plugins>
     </reporting>
