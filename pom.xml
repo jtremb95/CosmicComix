@@ -135,14 +135,8 @@
     <reporting>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <configuration>
-                    <targetJdk>1.7.0_91</targetJdk>
-                    <rulesets>
-                        <ruleset>pmd-ruleset.xml</ruleset>
-                    </rulesets>
-                </configuration>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </reporting>
